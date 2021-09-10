@@ -1,0 +1,92 @@
+@keyframes spin {
+  from { transform: scale(1) rotate(0deg); }
+  to { transform: scale(1) rotate(360deg); }
+}
+.App {
+  background-color: #444444;
+  position: relative;
+  .main-section {
+    min-height: calc(100vh - 121px);
+    // background-image: url('./assets/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    // .logo-background {
+    //   min-height: calc(100vh - 116px);
+    //   background-image: url('./assets/back-logo.svg');
+    //   background-position: center;
+    //   background-size: (50%, 50%);
+    //   background-repeat: no-repeat;
+    // }
+  }
+
+  .timer-wrapper {
+    position: fixed;
+    top: 5px;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    z-index: 110;
+
+    .timer {
+      font-family: "Montserrat";
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .value {
+      font-size: 20px;
+    }
+  }
+
+  .wait-loading {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(250, 250, 250, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+
+      .loadIcon {
+        color:rgba(0, 0, 0, 0.6);
+        font-size: 50px;
+        margin-right: 7px;
+        animation: spin 1s infinite linear;
+    }
+  }
+
+}
+//for removing google autocomplete logo 
+.pac-container:after{
+  content:none !important;
+}
+
+@media (max-width: 750px) {
+  .App {
+    .timer-wrapper {
+      right: 80px;
+    }
+  }
+}
+
+@media (min-width: 750.1px) and (max-width: 900px) {
+  .App {
+    .timer-wrapper {
+      right: 3px;
+    }
+  }
+}
+
+@media (min-width: 900.1px) and (max-width: 1210px) {
+  .App {
+    .timer-wrapper {
+      right: 10px;
+    }
+  }
+}

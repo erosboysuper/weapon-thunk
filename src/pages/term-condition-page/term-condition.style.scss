@@ -1,0 +1,57 @@
+.term-condition-page {
+    padding: 60px 100px;
+    width: 100%;
+    height: auto;
+    font-family: 'Work Sans', sans-serif;
+
+    .title {
+        border-bottom: 1px solid #5e5e5e;
+
+        .size33 {
+            font-size: 33px;
+            font-weight: 700;
+        }
+    }
+
+    .section-div {
+        padding-top: 30px;
+
+        .terms-div {
+            white-space: pre-wrap
+        }
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .term-condition-page {
+        padding: 30px 15px;
+
+        .title {
+            .size33 {
+                font-size: 30px;
+            }
+        }
+
+        .section-div {
+            padding-top: 20px;
+        }
+       
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .term-condition-page {
+        padding: 30px;
+
+        .title {
+            .size33 {
+                font-size: 30px;
+            }
+        }
+
+        .section-div {
+            padding-top: 20px;
+        }
+       
+    }
+}

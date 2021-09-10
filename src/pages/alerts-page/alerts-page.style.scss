@@ -1,0 +1,95 @@
+.alerts-page {
+    padding: 20px 0;
+    font-family: 'Work Sans', sans-serif;
+
+    .title {
+        font-size: 35px;
+        font-weight: 700;   
+    }
+
+    .alerts-container {
+        background-color: #444444aa;
+        width: 100%;
+        padding: 30px;
+
+        .alert-item {
+            padding: 20px;
+            color: lightgray;
+
+            &:nth-child(even){
+                background-color: #646464;
+            }
+
+            p {
+                margin: 0;
+
+                &.time-p {
+                    font-family: 'PT Sans', sans-serif;
+                }
+            }
+
+            .goToUrl {
+                cursor: pointer;
+            }
+
+            .item-img {
+                width: 60px;
+                height: 60px;
+                border-radius: 5px;
+            }
+
+            .closeBtn {
+                color: lightgray;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .container {
+        padding: 0 10px;
+
+        .alerts-page {
+            .title {
+                font-size: 30px;
+                font-weight: 700;
+                text-align: center;
+            }
+    
+            .alerts-container {
+                padding: 5px 0;
+    
+                .container {
+                    padding: 0 7px;
+                    
+                    .alert-item {
+                        padding: 20px 0 20px 7px;
+
+                        .col-10 {
+                            padding-right: 0;
+                        }
+
+                        .col-2 {
+                            padding-left: 0;
+                        }
+
+                    }
+                }            
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .alerts-page {
+        .title {
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        .alerts-container {
+            padding: 20px 0;
+        }
+    }
+}

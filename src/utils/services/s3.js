@@ -1,0 +1,1 @@
+export const getImageFromS3 = ((url) => `https://${process.env.REACT_APP_BUCKET_NAME}.s3.amazonaws.com/public/${url}`);

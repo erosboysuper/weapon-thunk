@@ -1,0 +1,57 @@
+.table-filter-input {
+
+    input {
+        padding: 10px 30px 10px 15px;
+        border-radius: 5px 0 0 5px;
+        border: 1px solid #767676;
+        background-color: transparent;
+        color: #a0a0a0;
+        width: 200px;
+
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    button {
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        border: 1px solid #767676;
+        background-color: #767676;
+        cursor: pointer;
+
+        &:focus {
+            outline: 0;
+        }
+
+        .searchSpan {
+            display: inline;
+        }
+
+        .searchBtn {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .table-filter-input {
+
+        button {
+            
+            .searchBtn {
+                display: inline;
+            }
+
+            .searchSpan {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+ 
+}

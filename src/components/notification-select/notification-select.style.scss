@@ -1,0 +1,48 @@
+.notification-select {
+    background-color: #6b6b6b;
+    color: lightgrey;
+    border-radius: 30px;
+
+    .select-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px 10px 25px;
+        height: 55px ;
+        cursor: pointer;
+
+        &.sub {
+            padding: 10px 20px 10px 35px;
+        }
+
+        .checked-icon {
+            border: 2px solid #47c69b;
+            border-radius: 30px;
+            padding: 6px 5px 4px 5px;
+            color: #6b6b6b;          
+
+            &.checked {
+                background-color: #47c69b;
+            }
+        }
+    }
+
+    .border-1 {
+        width: 100%;
+        border-top: 1px solid grey;
+        border-bottom: 1px solid #5a5a5a;
+    }
+    .border-2 {
+        margin: 0 20px 0 30px;
+        border-top: 1px solid grey;
+    }
+}
+
+@media (max-width: 450px) {
+    .notification-select {    
+        .select-div {
+            font-size: 13px;
+        }
+    }
+}

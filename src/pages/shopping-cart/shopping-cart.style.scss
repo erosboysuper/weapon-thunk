@@ -1,0 +1,53 @@
+.shopping-cart-page {
+    padding: 50px 100px;
+    font-family: 'Work Sans', sans-serif;
+
+    .headerRow {
+        font-weight: 600;
+    }
+
+    .total-price {
+        height: 50px;
+        width: 100%;
+        border-radius: 30px;
+        background-color: #4c4c4c;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+
+        label {
+            font-weight: 600;
+            font-size: 17px;
+            margin-bottom: 0;
+
+            &:first-of-type {
+                padding-right: 15px;
+                border-right: 1px solid grey;
+                color: white;
+            }
+
+            &:nth-of-type(2) {
+                color: #e41c39;
+            }
+        }
+    }
+
+    .no-result {
+        background-color: rgba(95,95,95,.7);
+        padding: 15px 0;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .shopping-cart-page{
+        padding: 20px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 850px) {
+    .shopping-cart-page{
+        padding: 30px;
+    }
+}

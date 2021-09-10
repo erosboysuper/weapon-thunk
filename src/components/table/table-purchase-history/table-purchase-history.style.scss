@@ -1,0 +1,87 @@
+.product-item {
+    background-color: #00000044;
+    min-height: 60px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 17px;
+    cursor: context-menu;
+
+    &.webinar {
+        height: 100px;
+
+        img {
+            width: 60px;
+            height: 60px;
+            border-radius: 3px;
+        }
+    }
+}
+
+.linkBtn {
+    border-radius: 10px;
+    font-size: 14px;
+    border: 2px solid grey;
+    background-color: transparent;
+    padding: 3px 10px;
+
+    &:hover {
+        color: #eeeeee !important;
+        border-color: white;
+    }
+    
+    &:focus {
+        outline: 0;
+    }
+
+    a:hover {
+        color: #eeeeee !important;
+        transition: all 0.1s ease-in-out;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .product-item {
+        margin: 0;
+        font-size: 14px;    
+        
+        &.webinar {
+            height: auto;
+    
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }  
+    }
+
+    .openBtn {
+        background-color: transparent!important;
+        border: 1.5px solid #eee;
+        border-radius: 50%!important;
+        width: 28px!important;
+        height: 28px!important;
+        font-size: 18px!important;
+        padding: 1px!important;
+
+        &:focus {
+            outline: 0 !important;
+        }
+    }
+
+    .openedTable {
+        background-color: #565656;
+        font-weight: 500;
+        font-size: 14px;
+        margin: 0;
+        cursor: context-menu;
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+ 
+}

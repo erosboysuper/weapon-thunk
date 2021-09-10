@@ -1,0 +1,40 @@
+
+.form-button {
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: #e41c39;
+    color: white;
+
+    &.greyColor {
+        background-color: #707070;
+    }
+
+    &.lightGreyCol {
+        background-color: grey;
+        color: #222;
+        border-radius: 10px;
+    }
+
+    &:disabled {
+        background-color: #e41c3955;
+        color: #bbb;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    .loadSubIcon {
+        margin-right: 7px;
+        animation: spin 1s infinite linear;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .form-button {
+        height: 44px;
+        font-size: 14px;
+    }
+}

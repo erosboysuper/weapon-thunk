@@ -1,0 +1,122 @@
+.alerts-div-wrapper {
+    position: absolute;
+    left: -155px;
+    top: 20px;
+    z-index: 10;
+
+    .triangleDiv {
+        width: 0;
+        height: 0;
+        margin-left: 165px;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 15px solid white;
+    }
+    
+    .alerts-popup-div {
+        width: 350px;
+        border-radius: 5px;        
+        background-color: white;
+
+        .top-div {
+            padding: 10px;
+            font-size: 20px;
+            font-weight: 500;
+            font-family: 'Work Sans', sans-serif;
+            color: #555555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: default;
+
+            .alerts-count-btn {
+                margin-left: 5px;
+                min-width: 25px;
+                height: 25px;
+                border: none;
+                border-radius: 50%;
+                background-color: #dc2f46;
+                color: white;
+                font-size: 15px;   
+                cursor: default;             
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    
+        .notification-items-container {
+            width: 100%;
+            max-height: 300px;
+            overflow-y: auto;
+            border-top: 1px solid lightgray;
+    
+            .notification-item {
+                padding: 10px;
+                border-bottom: 1px solid lightgrey;
+                cursor: pointer;
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                background-color: #eeeeee;
+                color: #555555;
+                align-items: center;
+    
+                &:hover {
+                    background-color: #aaaaaa;
+                    color: white;
+                }
+
+                .desc-div {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+
+                    div {
+                        &:first-of-type {
+                            width: 120px;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            // padding-right: 5px;
+                        }
+
+                        &:last-of-type {
+                            padding-left: 5px;
+                        }
+                    }
+                }
+
+                .item-img {
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 10px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    
+        .close-notification {
+            cursor: pointer;
+            padding: 10px 0;
+            color: #dc2f46;
+            
+            &.remove {
+                border-radius: 0 0 5px 5px;
+                border-top: 1px dashed #dc2f469a;
+            }
+            p {
+                margin: 0;
+                padding: 0;
+                font-weight: 600;
+            }
+
+            &:hover {
+                background-color: #dc2f46;
+                color: white;
+            }
+        }
+    }
+}

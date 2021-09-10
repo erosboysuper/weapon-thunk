@@ -1,0 +1,124 @@
+.check-out-page {
+    padding: 80px 100px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    font-family: 'Work Sans', sans-serif;
+
+    .back-span {
+        font-size: 17px;
+        cursor: pointer;
+    }
+
+    .check-out-form {
+        padding: 40px;
+        background-color: #444444aa;
+        border-radius: 10px;
+        box-shadow: 3px 3px 20px black;
+        height: 100%;
+       
+       .priceCol {
+            background-color: #535353;
+            border: 1px solid grey;
+            border-radius: 5px;
+            padding: 10px 15px;
+
+            p {
+                margin: 0;
+            }
+        }        
+
+        .payBtnGroup {
+            padding: 0 50px;
+        }
+
+        p.label {
+            margin-left: 25px;
+            margin-bottom: 0;
+            font-size: 14px;
+            color: #cccccc;
+        }
+
+        .invalidNum {
+            margin-left: 25px;
+            font-size: 13px;
+        }
+
+        .cvc-input {
+            background-color: transparent;
+            padding: 14px 20px 15px 30px;
+            width: 100%;
+            border: 1.5px solid #a3a3a3;
+            border-radius: 30px;
+            color: #a3a3a3;
+            font-size: 16px;
+            margin: 3px 0;
+            letter-spacing: 1px;
+
+            &.red-outline {
+                border-width: 1px;
+                box-shadow: 0 0 5px 3px #ff3547;
+            }
+
+            &:focus {
+                outline: 0;
+            }
+
+            &:disabled {
+                background-color: #616161;
+            }
+            
+            &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: #a0a0a0;
+                opacity: 1; /* Firefox */
+            }
+                
+            &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                color: #a0a0a0;
+            }
+                
+            &::-ms-input-placeholder { /* Microsoft Edge */
+                color: #a0a0a0;
+            }
+        }
+
+        .checkbox-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-items: flex-start;
+            margin: 10px 0;
+
+            p {
+                letter-spacing: -0.5px;
+                padding-top: 0 !important;
+                font-weight: 300;
+                margin-top: -2px;
+                margin-bottom: 0;
+            }
+
+            .underline {
+                color: #eeeeee;
+                text-decoration: underline;
+                font-family: 'Work Sans', sans-serif;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 575.98px) { 
+    .check-out-page {
+        padding: 20px 10px;
+
+        .check-out-form {
+            padding: 20px 15px;
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .check-out-page {
+        padding: 50px;  
+    }
+}

@@ -1,0 +1,58 @@
+.ccNum-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;  
+    padding: 14px 20px 15px 30px;
+    width: 100%;
+    border: 1.5px solid #a3a3a3;
+    border-radius: 30px;
+    margin: 3px 0;
+
+    &.red-outline {
+        border-width: 1px;
+        box-shadow: 0 0 5px 3px #ff3547;
+    }
+
+    &.isDisabled {
+        background-color: #616161;
+    }
+
+    .ccNum-input {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin: 0;
+        color: #a0a0a0;
+        font-size: 16px;
+        width: 100%;
+        letter-spacing: 2px;
+
+        &:focus {
+            outline: 0;
+        }
+
+        &:disabled {
+            background-color: #616161;
+        }
+        
+        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #a0a0a0;
+            opacity: 1; /* Firefox */
+        }
+            
+        &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #a0a0a0;
+        }
+            
+        &::-ms-input-placeholder { /* Microsoft Edge */
+            color: #a0a0a0;
+        }
+    }
+
+    .ccNum-icon {
+        font-size: 26px;
+        color: #eeeeee;
+        margin: 0 5px;
+    }
+}

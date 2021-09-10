@@ -1,0 +1,6 @@
+export const ProductsActionTypes = {
+    SET_PRODUCTS: "SET_PRODUCTS",
+    ADD_MORE_PRODUCTS: "ADD_MORE_PRODUCTS",
+    SET_LIMIT: "SET_LIMIT",
+    SET_OFFSET: "SET_OFFSET"
+}

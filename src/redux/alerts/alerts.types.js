@@ -1,0 +1,9 @@
+const AlertsActionTypes = {
+    ALERTS_SHOW: "ALERTS_SHOW",
+    HIDE_ALERTS: "HIDE_ALERTS",
+    REMOVE_READ_ITEM: "REMOVE_READ_ITEM",
+    SET_NOTIFICATIONS: "SET_NOTIFICATIONS",
+    SET_LOAD_ALERTS: "SET_LOAD_ALERTS"
+};
+
+export default AlertsActionTypes;

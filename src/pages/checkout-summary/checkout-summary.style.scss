@@ -1,0 +1,28 @@
+.checkout-summary {
+    padding: 100px;
+    font-family: 'Work Sans', sans-serif;
+
+    .summary-form {
+        padding: 40px;
+        background-color: #444444aa;
+        border-radius: 10px;
+        box-shadow: 3px 3px 20px black;
+
+        .success-icon {
+            font-size: 70px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .checkout-summary {
+        padding: 30px 10px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .checkout-summary {
+        padding: 50px 30px;
+    }
+}

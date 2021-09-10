@@ -1,0 +1,40 @@
+.old-enough-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 116px);
+
+    p {
+        color: #a3a3a3;
+        font-size: 60px;
+        font-weight: 800;
+        margin-bottom: 40px;
+    }
+
+    button {
+        padding: 10px 20px;
+        color: white;
+        background-color: #e41c39;
+        border: none;
+        font-size: 30px;
+        font-weight: 900;
+
+        &:focus {
+            outline: 0;
+        }
+
+        &:hover {
+            background-color: white;
+            color: #e41c39;
+        }
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .old-enough-page {
+        p {
+            font-size: 40px;
+        }
+    }
+}

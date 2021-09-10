@@ -1,0 +1,95 @@
+.cc-wrapper {
+    width: 100%;
+    margin: 25px 0;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background: transparent;
+    border: 1.5px solid #a3a3a3;
+    color: #a0a0a0;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .changeBtn {
+        background-color: transparent;
+        color: white;
+        border-bottom: 1px solid white;
+        padding: 0 3px;
+        cursor: pointer;
+    }    
+}
+
+.modal-content {
+    background-color: #444444 !important;
+    border-radius: 20px !important;
+    padding: 10px !important;
+
+    .modal-body {
+        padding-bottom: 0 !important;
+    }
+
+    .modal-footer {
+        border: none !important;
+
+        .btns {
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            .form-button {
+                letter-spacing: 0.5px;
+
+                &:first-of-type {
+                    margin-right: 18px;
+                }
+
+                &:last-of-type {
+                    background-color: transparent;
+                    border: 2px solid #e41c39;
+                    // color: #e41c39
+                }
+            }
+        }
+    }
+}
+
+p.label {
+    margin-left: 25px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #cccccc;
+}
+
+.invalidNum {
+    margin-left: 25px;
+    font-size: 13px;
+}
+
+.cvc-input {
+    background-color: transparent;
+    padding: 14px 20px 15px 30px;
+    width: 100%;
+    border: 1.5px solid #a3a3a3;
+    border-radius: 30px;
+    color: #a3a3a3;
+    font-size: 16px;
+    margin: 3px 0;
+    letter-spacing: 1px;
+
+    &.red-outline {
+        border-width: 1px;
+        box-shadow: 0 0 5px 3px #ff3547;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+    
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #a0a0a0;
+        opacity: 1; /* Firefox */
+    }
+}

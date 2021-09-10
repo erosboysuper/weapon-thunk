@@ -1,0 +1,63 @@
+.page-buttons {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #767676;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #a0a0a0;
+    cursor: pointer;
+    background-color: #33333333;
+
+    div {
+        padding: 0 10px;
+
+        &:hover {
+            color: white;
+        }
+
+        &:first-child {
+            border-right: 1px solid #767676;
+            min-width: 104px;
+        }
+
+        &:last-of-type {
+            min-width: 72px;
+        }
+
+        &.pageNum {
+            border-right: 1px solid #767676;
+
+            &.current {
+                font-weight: 700;
+                color: white;
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .page-buttons {
+
+        div {
+            &:first-of-type {
+                padding: 0 15px 0 5px;
+                min-width: auto;
+            }
+
+            &:last-of-type {
+                padding: 0 5px 0 15px;
+                min-width: auto;
+            }
+        }
+
+        .hiddenSpan {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+ 
+}

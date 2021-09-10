@@ -1,0 +1,37 @@
+.faq-page {
+    padding: 60px 200px;
+    font-family: "Work Sans", sans-serif;
+
+    h2 {
+        letter-spacing: 1px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .faq-page {
+        padding: 30px 10px;
+    
+        h2 {
+            letter-spacing: 0px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .faq-page {
+        padding: 30px;
+    
+        h2 {
+            letter-spacing: 0px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1025px) {
+    .faq-page {
+        padding: 60px;
+    }
+}

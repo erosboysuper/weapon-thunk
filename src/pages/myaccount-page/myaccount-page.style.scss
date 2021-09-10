@@ -1,0 +1,259 @@
+.myaccount-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    font-family: 'Work Sans', sans-serif;
+
+    .profile-form {
+        padding: 50px 70px;
+        width: 700px;
+        height: auto;
+        background-color: #444444aa;
+        border-radius: 10px;
+        box-shadow: 3px 3px 20px black;
+
+        &.confirm {
+            width: 650px;
+            padding: 50px 120px;
+        }
+
+        &.unverified-form {
+            width: 600px;
+            padding: 50px 120px;
+
+            .icon-div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 40px;
+
+                .unverified-icon {
+                    font-size: 8em;
+                    color: #a0a0a0;
+                }
+            }
+
+            p {
+                color: #a0a0a0;
+                margin-bottom: 50px;
+
+                span {
+                    color: #e41c39;
+                }
+            }
+
+            h1 {
+                font-size: 3em;
+            }
+        }
+
+        .changeP {
+            margin-top: -25px;
+            margin-left: 20px;
+        }
+
+        .upload-text-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .upload-text {
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+
+        .photo-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .photo-img {
+                width: 125px;
+                height: 125px;
+                min-width: 100px;
+                min-height: 100px;
+                border-radius: 50%;
+                border: 2px solid grey;
+            }
+
+            .non-photo-img {
+                width: 125px;
+                height: 125px;
+                min-width: 100px;
+                min-height: 100px;
+                border-radius: 50%;
+                border: 2px solid grey;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #5f5f5f;
+                background-color: #757575;
+                font-size: 60px;
+                cursor: pointer;
+            }
+        }
+
+        #hidden-input-field {
+            display: none;
+        }
+        #crop-container {
+            position: absolute;
+            z-index: 5;
+            width: fit-content;
+           
+            
+            // box-shadow: 0 0 15px 7px;
+
+            .crop-div {
+                box-shadow: 0 0 15px 10px white;
+                max-width: 600px;
+                max-height: 830px;
+                
+
+                .ReactCrop__image {
+                    width: 600px !important;
+                    // max-height: 735px !important;
+                }
+            }
+
+            #crop-btn {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 130px;
+                height: 45px;
+                color: black;
+                background-color: white;
+                border: none;
+                font-size: x-large;
+                font-weight: 700;
+                border-radius: 50px;
+                box-shadow: 0 0 5px;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        @mixin shrinkLabel {
+            top: -17px;
+            font-size: 13px;
+            color: white;    
+        }
+
+        .phone-group {
+            position: relative;
+            margin: 30px 0;
+            font-family: 'PT Sans', sans-serif;
+
+            .phone-input {
+                background: none;
+                background-color: transparent;
+                color: #a0a0a0;
+                font-size: 20px;
+                padding: 10px 10px 10px 30px;
+                display: block;
+                width: 100%;
+                border: 1.5px solid #a3a3a3;
+                border-radius: 30px;
+                margin: 25px 0;
+
+                &.red-outline {
+                    border: 1.5px solid #ff3547;
+                }
+
+                &:disabled {
+                    background-color: grey;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+
+                &:focus ~ .phone-input-label {
+                    @include shrinkLabel();
+                }
+            }
+
+            .phone-input-label { 
+                color: #a0a0a0;
+                font-size: 18px;
+                font-weight: normal;
+                position: absolute;
+                pointer-events: none;
+                left: 25px;
+                top: 13px;
+                transition: 300ms ease all;
+
+                &.red-label {
+                    color: #ff3547 !important;
+                }
+
+                &.shrink {
+                    @include shrinkLabel();
+                }
+            }
+        }
+
+        #prodNotif {
+            background: none;
+            background-color: transparent;
+            color: grey;
+            font-size: 20px;
+            padding: 10px 10px 10px 30px;
+            display: block;
+            width: 100%;
+            border: 1.5px solid #a3a3a3;
+            border-radius: 30px;
+            margin: 25px 0;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 575.98px) { 
+    .myaccount-page {
+        padding: 35px 10px;
+
+        .profile-form {
+            padding: 30px 15px;
+
+            &.confirm {
+                width: 340px;
+                padding: 60px 5px;
+            }
+
+            &.unverified-form {
+                padding: 30px;
+
+                .icon-div {
+                    padding-bottom: 20px;
+                }
+            }
+        }       
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .myaccount-page {
+        padding: 40px;
+
+        .profile-form {
+            
+            &.confirm {
+                padding: 60px 20px;
+            }
+        }
+
+       
+    }
+}
+

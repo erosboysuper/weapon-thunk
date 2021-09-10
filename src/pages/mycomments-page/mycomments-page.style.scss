@@ -1,0 +1,23 @@
+.mycomments-page {
+    padding: 70px 100px;
+    font-family: 'Work Sans', sans-serif;
+
+    h4 {
+        padding: 50px 0;
+        border-radius: 10px;
+        background-color: #6b6b6b99;
+        margin: 0 30px;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .mycomments-page {
+        padding: 20px 10px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .mycomments-page {
+        padding: 20px;
+    }
+}

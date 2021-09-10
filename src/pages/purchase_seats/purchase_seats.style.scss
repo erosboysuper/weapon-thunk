@@ -1,0 +1,154 @@
+.purchase-seats-page {
+    padding: 60px 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Work Sans', sans-serif;
+
+    h2 {
+        font-weight: 700;
+        margin-bottom: 50px;
+        display: inline-block;
+        margin-left: 100px;
+    }
+
+    .seats-container {
+        padding-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .each-seat {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+            width: 40px;
+            height: 40px;
+            color: white;
+            font-weight: 700;
+            border-radius: 7px;             
+        
+            &.available {
+                background-color: #c46d1b;
+                cursor: pointer;
+                
+                &.selected {
+                    border: 1px solid white;
+                    box-shadow: 0 0 5px 4px white;
+                    background-color: orange;
+                }
+                
+                &:hover {
+                    transition: transform 0.25s ease-out;
+                    transform: scale(1.15);
+                    background-color: orange;
+                }
+            }
+
+            &.taken {
+                background-color: #6a6a6a;
+                cursor: not-allowed;
+
+            }
+
+            &.reserved {
+                cursor: not-allowed;
+                box-sizing: border-box;
+                background-color: #08308a;
+                border: 2px solid #42559b;
+
+            }
+        }
+    }
+
+    .content-center {
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .stadium-img {
+            width: 80%;
+        }
+
+        &.wth-400 {
+            width: 500px;
+            padding-bottom: 40px;
+
+            p {
+                font-weight: 700;
+                text-align: center;
+
+                img {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .purchase-seats-page {
+        padding: 20px 7px;
+
+        h2 {
+            margin-bottom: 20px;
+            margin-left: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .seats-container {
+            padding-bottom: 20px;
+
+            .each-seat {
+                width: 35px;
+                height: 35px;
+            }
+        }
+
+        .content-center {
+            padding: 0 15px 15px 15px;
+
+            &.wth-400 {
+                width: 100%;
+                padding: 0 20px 15px 20px;
+            }
+
+            .stadium-img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 850px) {
+    .purchase-seats-page {
+        padding: 30px 20px;
+
+        
+        h2 {
+            margin-bottom: 20px;
+            margin-left: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .seats-container {
+            padding-bottom: 30px;
+        }
+
+        .content-center {
+            padding: 0 15px 15px 15px;
+
+            &.wth-400 {
+                padding: 0 20px 15px 20px;
+            }
+
+            .stadium-img {
+                width: 100%;
+            }
+        }
+    }
+}
